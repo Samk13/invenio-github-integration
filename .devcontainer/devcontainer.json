@@ -1,0 +1,26 @@
+{
+	"name": "Invenio Development",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"extensions": [
+			"ms-azuretools.vscode-docker",
+			"ms-python.python"
+		]
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/azure-cli:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "latest",
+			"enableNonRootDocker": "true",
+			"moby": "true"
+		},
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.9"
+		},
+		"ghcr.io/devcontainers/features/node": {
+			"version": "16"
+		}
+	}
+}
